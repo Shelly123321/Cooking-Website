@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .main {
+        width: 100%;
+        /* background: url(images/bech.jpeg); */
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.1) 50%
+          ),
+          url(img/bech.jpeg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        font-family: "Lucida Sans", "Lucida Sans Regular";
+        font-size: 25px;
+      }
+      .navbar {
+        width: 95%;
+        height: auto;
+        margin-left: 40px;
+        /* border:1px solid orange; */
+      }
+
+      #logo {
+        width: 150px;
+        height: 160px;
+        float: left;
+        padding-top: 10px;
+        cursor: pointer;
+      }
+      .menu {
+        width: 800px;
+        height: 700px;
+        float: left;
+        /* border: 1px solid red; */
+      }
+      ul {
+        /* float:left; */
+        width: 800px;
+        display: flex;
+        padding-top: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        /* border: 1px solid yellow; */
+      }
+      ul li {
+        width: 150px;
+        list-style: none;
+        margin-left: 40px;
+        /* border: 1px solid rgb(43, 255, 0); */
+      }
+      ul li a {
+        /* width:150px;
+        list-style: none;
+        margin-left: 40px; */
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+        /* border: 1px solid rgb(255, 0, 132); */
+      }
+      ul li a:hover {
+        color: rgb(199, 18, 109);
+        font-size: 26px;
+      }
+      .button {
+        width: 160px;
+        height: 50px;
+        cursor: pointer;
+        /* text-align: center;
+          justify-content: center;
+        align-items: center; */
+        margin-left: 50px;
+      }
+      .button li a {
+        color: black;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+      }
+      .summary {
+        color:white;
+        float:right;
+        margin-top: 45px;
+        margin-right: 150px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .summary h3{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        margin-top: 15px;
+
+      }
+      .summary h3:hover{
+        height:30px;
+        color:black;
+        background-color: white;
+        font-size: 22px;
+      }
+      .title{
+       position:absolute;
+        color:white;
+        top:300px;
+        left:220px;
+        font-size: 40px;
+        font-family:'Times New Roman', Times, serif;
+      }
+      .button1{
+        /* border:white; */
+        position:absolute;
+        top:410px;
+        left:220px;
+    }
+    .button1 .btn{
+        text-decoration: none;
+        margin-left:3px;
+      padding-top:5px;
+      padding-left:20px;
+      padding-right:20px;
+      padding-bottom:5px;
+        color:white;
+        border: 2px solid white;
+      }
+      .button1 .btn:hover{
+        color:black;
+        font-size: 28px;
+        background: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <img src="img/logo1.png" alt="" id="logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <button class="button">
+            <li>
+              <a href="#"> <i class="fa fa-home"></i></a>
+            </li>
+            <li><a href="#">&ensp;Home</a></li>
+          </button>
+          <!-- <li><a href="#"> <i class='fa fa-home'></i></a></li>
+          <li><a href="#">Home</a></li> -->
+          <li><a href="#">About</a></li>
+          <li><a href="#">Desert</a></li>
+          <li><a href="#">Appetizer</a></li>
+          <li><a href="#">Pasta</a></li>
+          <li><a href="#">Salad</a></li>
+          <li><a href="#">Burger</a></li>
+          <li><a href="#">Pizza</a></li>
+        </ul>
+        <!-- <select name="select" id=""></select> -->
+    </div>
+    <details class="summary">
+      <summary>More Recipes</summary>
+      <h3>Cookies</h3>
+      <h3>Sandwich</h3>
+      <!-- <select name="select" id="">
+        <section>
+            <h3>Cookies</h3>
+            <h3>Sandwich</h3>
+        </section>
+    </select> -->
+    </details>
+    <div class="title">
+        <h1> HOMIE RECIPES </h1>
+    </div>
+    <div class="button1">
+        <a href="#" class="btn">WATCH VIDEO</a>
+        <a href="#" class="btn">BASIC SKILLS</a>
+        <a href="#" class="btn">LEARN MORE</a>
+    </div>
+    </div>
+  </body>
+</html>
